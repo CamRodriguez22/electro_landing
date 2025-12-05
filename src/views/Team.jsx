@@ -9,72 +9,74 @@ const Team = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 })
   const [selectedMember, setSelectedMember] = useState(null)
 
-  const teamMembers = [
-    {
-      name: "Juan Betancourt",
-      position: "Design Leader",
-      specialization: "Liderazgo Técnico y Arquitectura de Sistemas",
-      experience: "Estudiante de Ingeniería",
-      image: <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd05iL3EICvfyOCFo7cjDWQvCaZR4oG8Oafw&s" alt="Juan Betancourt" />,
-      bio: "Juan lidera el equipo técnico de ThermoLabs, encargándose de la definición de especificaciones y supervisión del desarrollo del OP-AMP y la arquitectura del sistema. Su enfoque se centra en la innovación y la precisión técnica.",
-      achievements: [
-        "Liderazgo en el desarrollo del OP-AMP personalizado",
-        "Definición de especificaciones técnicas del proyecto",
-        "Supervisión de la arquitectura del sistema de sensores",
-        "Coordinación del equipo de desarrollo",
-      ],
-      linkedin: "#",
-      email: "juan.betancourt@uninorte.edu.co",
-    },
-    {
-      name: "Camila Rodríguez",
-      position: "Communications Officer",
-      specialization: "Comunicación y Gestión de Redes",
-      experience: "Estudiante de Ingeniería",
-      image: <img src="/images/team/camila.jpg" alt="Camila Rodríguez" />,
-      bio: "Camila es responsable de la comunicación interna y externa de ThermoLabs, gestionando nuestras redes sociales y las presentaciones del proyecto. Su trabajo asegura que nuestras innovaciones lleguen efectivamente a nuestros clientes.",
-      achievements: [
-        "Gestión estratégica de redes sociales",
-        "Coordinación de comunicación interna del equipo",
-        "Desarrollo de presentaciones técnicas",
-        "Relaciones públicas y comunicación externa",
-      ],
-      linkedin: "#",
-      email: "camila.rodriguez@uninorte.edu.co",
-    },
-    {
-      name: "David Serrano",
-      position: "Resource & Facilities Manager",
-      specialization: "Gestión de Recursos y Logística",
-      experience: "Estudiante de Ingeniería",
-      image: <img src="/images/team/david.jpg" alt="David Serrano" />,
-      bio: "David administra los materiales, herramientas y recursos de laboratorio de ThermoLabs, además de coordinar toda la logística del proyecto. Su gestión eficiente permite que el equipo se enfoque en la innovación.",
-      achievements: [
-        "Administración eficiente de recursos de laboratorio",
-        "Coordinación logística de proyectos",
-        "Gestión de inventario de materiales y herramientas",
-        "Optimización de procesos operativos",
-      ],
-      linkedin: "#",
-      email: "david.serrano@uninorte.edu.co",
-    },
-    {
-      name: "Marcela Mercado",
-      position: "Archivist",
-      specialization: "Documentación Técnica y Registros",
-      experience: "Estudiante de Ingeniería",
-      image: <img src="/images/team/marcela.jpg" alt="Marcela Mercado" />,
-      bio: "Marcela se encarga de toda la documentación técnica, bitácoras y registros del proyecto ThermoLabs. Su trabajo meticuloso asegura que cada proceso esté debidamente documentado y sea reproducible.",
-      achievements: [
-        "Documentación técnica completa del proyecto",
-        "Mantenimiento de bitácoras detalladas",
-        "Gestión de registros y archivos técnicos",
-        "Estandarización de procesos de documentación",
-      ],
-      linkedin: "#",
-      email: "marcela.mercado@uninorte.edu.co",
-    },
-  ]
+const teamMembers = [
+  {
+    name: "Juan Betancourt",
+    position: "Design Leader",
+    specialization: "Liderazgo Técnico y Arquitectura de Sistemas",
+    experience: "Estudiante de Ingeniería",
+    image: "/images/juan.jpeg",
+    bio: "Juan lidera el equipo técnico de ThermoLabs, encargándose de la definición de especificaciones y supervisión del desarrollo del OP-AMP y la arquitectura del sistema. Su enfoque se centra en la innovación y la precisión técnica.",
+    achievements: [
+      "Liderazgo en el desarrollo del OP-AMP personalizado",
+      "Definición de especificaciones técnicas del proyecto",
+      "Supervisión de la arquitectura del sistema de sensores",
+      "Coordinación del equipo de desarrollo",
+    ],
+    linkedin: "#",
+    email: "juan.betancourt@uninorte.edu.co",
+  },
+  {
+    name: "Camila Rodríguez",
+    position: "Communications Officer",
+    specialization: "Comunicación y Gestión de Redes",
+    experience: "Estudiante de Ingeniería",
+    image: "/images/camila.jpeg",
+    bio: "Camila es responsable de la comunicación interna y externa de ThermoLabs, gestionando nuestras redes sociales y las presentaciones del proyecto. Su trabajo asegura que nuestras innovaciones lleguen efectivamente a nuestros clientes.",
+    achievements: [
+      "Gestión estratégica de redes sociales",
+      "Coordinación de comunicación interna del equipo",
+      "Desarrollo de presentaciones técnicas",
+      "Relaciones públicas y comunicación externa",
+    ],
+    linkedin: "#",
+    email: "camila.rodriguez@uninorte.edu.co",
+  },
+  {
+    name: "David Serrano",
+    position: "Resource & Facilities Manager",
+    specialization: "Gestión de Recursos y Logística",
+    experience: "Estudiante de Ingeniería",
+    image: "/images/david.jpeg",
+    bio: "David administra los materiales, herramientas y recursos de laboratorio de ThermoLabs, además de coordinar toda la logística del proyecto. Su gestión eficiente permite que el equipo se enfoque en la innovación.",
+    achievements: [
+      "Administración eficiente de recursos de laboratorio",
+      "Coordinación logística de proyectos",
+      "Gestión de inventario de materiales y herramientas",
+      "Optimización de procesos operativos",
+    ],
+    linkedin: "#",
+    email: "david.serrano@uninorte.edu.co",
+  },
+  {
+    name: "Marcela Mercado",
+    position: "Archivist",
+    specialization: "Documentación Técnica y Registros",
+    experience: "Estudiante de Ingeniería",
+    image: "/images/marcela.jpeg",
+    bio: "Marcela se encarga de toda la documentación técnica, bitácoras y registros del proyecto ThermoLabs. Su trabajo meticuloso asegura que cada proceso esté debidamente documentado y sea reproducible.",
+    achievements: [
+      "Documentación técnica completa del proyecto",
+      "Mantenimiento de bitácoras detalladas",
+      "Gestión de registros y archivos técnicos",
+      "Estandarización de procesos de documentación",
+    ],
+    linkedin: "#",
+    email: "marcela.mercado@uninorte.edu.co",
+  },
+];
+
+
 
   return (
     <section id="team" className="py-20 bg-gray-50" ref={ref}>
@@ -107,7 +109,7 @@ const Team = () => {
             >
               <div className="relative overflow-hidden">
                 <img
-                  src={member.image || "/placeholder.svg"}
+                  src={member.image}
                   alt={member.name}
                   className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110"
                 />
@@ -168,7 +170,7 @@ const Team = () => {
                   <div className="grid md:grid-cols-2 gap-6 p-6">
                     <div>
                       <img
-                        src={selectedMember.image || "/placeholder.svg"}
+                        src={selectedMember.image}
                         alt={selectedMember.name}
                         className="w-full h-64 object-cover rounded-lg"
                       />
